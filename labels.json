@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchCategories": "rust",
+      "addLabels": ["rust"]
+    },
+    {
+      "matchCategories": "docker",
+      "addLabels": ["docker"]
+    },
+    {
+      "matchCategories": "js",
+      "addLabels": ["javascript"]
+    },
+    {
+      "matchManagers": "github-actions",
+      "addLabels": ["github_actions"]
+    }
+  ]
+}
