@@ -3,19 +3,19 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchCategories": "rust",
+      "matchCategories": ["rust"],
       "addLabels": ["rust"]
     },
     {
-      "matchCategories": "docker",
+      "matchCategories": ["docker"],
       "addLabels": ["docker"]
     },
     {
-      "matchCategories": "js",
+      "matchCategories": ["js"],
       "addLabels": ["javascript"]
     },
     {
-      "matchManagers": "github-actions",
+      "matchManagers": ["github-actions"],
       "addLabels": ["github_actions"]
     }
   ]
