@@ -12,8 +12,12 @@
       "matchPackageNames": ["*"],
       "commitMessageAction": "Bump",
       "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
-      "commitMessageTopic": "{{#if isGroup}}the {{groupName}} group{{else}}{{depName}}{{/if}}",
-      "commitMessageSuffix": "{{#if isGroup}}with {{upgrades.length}} updates{{/if}}"
+      "commitMessageTopic": "{{depName}}",
+      "commitMessageSuffix": ""
     }
-  ]
+  ],
+  "group": {
+    "commitMessageTopic": "the {{groupName}} group",
+    "commitMessageSuffix": "with {{upgrades.length}} updates"
+  }
 }
